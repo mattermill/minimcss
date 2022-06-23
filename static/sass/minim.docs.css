@@ -262,16 +262,6 @@ button.button-primary:hover,
 a.button.button-primary:hover {
   background: var(--color-black);
 }
-button.button-ghost,
-a.button.button-ghost {
-  background: transparent;
-  color: var(--color-text-dark);
-  border-color: transparent;
-}
-button.button-ghost:hover,
-a.button.button-ghost:hover {
-  border-color: var(--color-border);
-}
 button.button-large,
 a.button.button-large {
   height: 5.6rem;
@@ -346,6 +336,7 @@ pre code {
 
 .md-spacer {
   display: block;
+  background: var(--color-theme-secondary);
 }
 .md-spacer.md-spacer--xs {
   max-width: var(--space-xs);
@@ -392,8 +383,17 @@ pre code {
 }
 .md-content p {
   font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
-  font-size: 1.5em;
+  font-size: 1.25em;
   line-height: 1.5em;
+}
+.md-content.md-desc {
+  font-size: 0.8em;
+  background: rgba(255, 255, 159, 0.2);
+  padding: var(--space-l);
+  border-radius: var(--space-s);
+}
+.md-content.md-desc p:last-child {
+  margin-bottom: 0;
 }
 
 .md-section-header {
@@ -401,7 +401,6 @@ pre code {
   margin-bottom: 1em;
   font-family: "Poppins";
   text-transform: uppercase;
-  font-size: 2em;
 }
 .md-section-header h2 span {
   color: var(--color-theme-secondary);
@@ -445,7 +444,6 @@ nav.md-toc li:last-child {
 }
 nav.md-toc li.nav_item {
   text-transform: uppercase;
-  font-size: 2em;
 }
 nav.md-toc li.nav_item.active > a, nav.md-toc li.nav_item.active > a:hover {
   color: var(--color-theme-praimry);
@@ -471,11 +469,12 @@ nav.md-toc li.nav-section-title {
 
 .row.md-block {
   padding: 4em 0;
-  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
   flex-direction: column;
 }
 .row.md-block:last-child {
   padding-bottom: 0;
+  border: none;
 }
 
 .md-info {
@@ -488,7 +487,7 @@ nav.md-toc li.nav-section-title {
 
 @media (min-width: 40rem) {
   nav.md-toc li.nav_item {
-    font-size: 3em;
+    font-size: 1.5em;
   }
 
   .md-feature-desc {
@@ -505,7 +504,7 @@ nav.md-toc li.nav-section-title {
     height: 100vh;
   }
   nav.md-toc li.nav_item {
-    font-size: 3em;
+    font-size: 1.5em;
   }
 
   .row.md-block {

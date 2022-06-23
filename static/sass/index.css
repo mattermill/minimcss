@@ -262,16 +262,6 @@ button.button-primary:hover,
 a.button.button-primary:hover {
   background: var(--color-black);
 }
-button.button-ghost,
-a.button.button-ghost {
-  background: transparent;
-  color: var(--color-text-dark);
-  border-color: transparent;
-}
-button.button-ghost:hover,
-a.button.button-ghost:hover {
-  border-color: var(--color-border);
-}
 button.button-large,
 a.button.button-large {
   height: 5.6rem;

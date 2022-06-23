@@ -30,15 +30,6 @@ a.button {
             background: var(--color-black);
         }
     }
-    &.button-ghost {
-        background: transparent;
-        color: var(--color-text-dark);
-        border-color: transparent;
-
-        &:hover {
-            border-color: var(--color-border);
-        }
-    }
 
 /* ==========================================================================
    Sizes
