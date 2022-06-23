@@ -1,0 +1,307 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+:root {
+  --color-white: #FFFFFF;
+  --color-black: #1A1A33;
+  --color-theme-primary: #1A1A33;
+  --color-theme-secondary: #06e52f;
+  --color-gray: #f5f5f6;
+  --color-gray-dark: #D1D8DB;
+  --color-gray-darker: #A8B3B8;
+  --color-bg-light: var(--color-gray);
+  --color-bg-lighter: #f5f5f5;
+  --color-bg-dark: var(--color-gray-dark);
+  --color-border: #E1E2E3;
+  --color-border-dark: var(--color-gray-dark);
+  --color-text-dark: var(--color-black);
+  --color-text-medium: var(--color-gray-darker);
+  --color-text-light: #B0B6B8;
+  --color-text-on-dark: var(--color-white);
+  --color-text-code: #F616AA;
+  --space-xs: 0.5rem;
+  --space-s: 0.8rem;
+  --space-m: 1.6rem;
+  --space-l: 3.2rem;
+  --space-xl: 4.8rem;
+  --space-xxl: 6.4rem;
+  --font-size-xxxl: 4.5em;
+  --font-size-xxl: 3em;
+  --font-size-xl: 2em;
+  --font-size-l: 1.5em;
+  --font-size-m: 1em;
+  --font-size-s: 0.875em;
+  --font-size-xs: 0.75em;
+  --mobile: 40rem;
+  --tablet: 80rem;
+  --desktop: 120rem;
+  --border-size-s: var(--space-s);
+  --border-size-xs: var(--space-xs);
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  color: #1A1A33;
+  font-size: 1.6rem;
+  line-height: 1.5em;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-theme-primary);
+}
+a:hover {
+  color: var(--color-theme-secondary);
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  --column-gap: var(--space-s);
+  display: flex;
+  margin: 1em calc(var(--column-gap) * -1);
+  flex-direction: column;
+}
+.row .col {
+  flex: 1;
+  margin: 0 var(--column-gap);
+}
+.row .col.hug {
+  flex: none;
+  width: unset;
+}
+
+@media (min-width: 40rem) {
+  .container {
+    max-width: 1280px;
+    flex-direction: row;
+  }
+
+  .row {
+    flex-direction: row;
+  }
+  .row .col {
+    margin-bottom: 1em;
+  }
+  .row .col.col-one-third {
+    flex: none;
+    width: 33.3333%;
+  }
+  .row.gap-l {
+    margin: 1em calc(var(--column-gap) * 3 * -1);
+  }
+  .row.gap-l > .col {
+    margin: 0 calc(var(--column-gap) * 3);
+  }
+}
+table {
+  width: 100%;
+  table-layout: fixed;
+}
+table td, table th {
+  text-align: left;
+  vertical-align: top;
+}
+table thead {
+  display: table-header-group;
+  background: var(--color-bg-lighter);
+  color: var(--color-text-medium);
+  font-size: var(--font-size-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+table thead th {
+  padding: var(--space-s);
+}
+table tbody td {
+  padding: var(--space-m) var(--space-s);
+}
+
+b, strong {
+  font-weight: 600;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 700;
+  line-height: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  font-size: var(--font-size-xxxl);
+}
+
+h2 {
+  font-size: var(--font-size-xxl);
+}
+
+h3 {
+  font-size: var(--font-size-xl);
+}
+
+h4 {
+  font-size: var(--font-size-l);
+  margin-bottom: var(--space-s);
+}
+
+h5 {
+  font-size: var(--font-size-m);
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  font-weight: 700;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+button,
+a.button {
+  display: inline-block;
+  height: 4.2rem;
+  line-height: 4.2rem;
+  padding: 0 var(--space-m);
+  border: 1px solid transparent;
+  border-radius: 4px;
+  font-size: var(--font-size-s);
+  font-weight: 700;
+  transition: all 0.2s;
+  cursor: pointer;
+  /* ==========================================================================
+     Variants
+     ========================================================================== */
+  /* ==========================================================================
+     Sizes
+     ========================================================================== */
+}
+button:hover,
+a.button:hover {
+  background: var(--color-bg-dark);
+}
+button:active,
+a.button:active {
+  transform: translateY(1px);
+}
+button.button-primary,
+a.button.button-primary {
+  background: var(--color-theme-primary);
+  color: var(--color-white);
+}
+button.button-primary:hover,
+a.button.button-primary:hover {
+  background: var(--color-black);
+}
+button.button-ghost,
+a.button.button-ghost {
+  background: transparent;
+  color: var(--color-text-dark);
+  border-color: transparent;
+}
+button.button-ghost:hover,
+a.button.button-ghost:hover {
+  border-color: var(--color-border);
+}
+button.button-large,
+a.button.button-large {
+  height: 5.6rem;
+  line-height: 5.6rem;
+  font-size: var(--font-size-m);
+  padding: 0 var(--space-l);
+}
+button.button-small,
+a.button.button-small {
+  height: 2.8rem;
+  line-height: 2.8rem;
+  padding: 0 var(--space-s);
+}
+
+code {
+  font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+  overflow-wrap: break-word;
+  display: inline-block;
+  color: var(--color-text-code);
+  font-size: var(--font-size-s);
+  background: var(--color-bg-lighter);
+  padding: 0 var(--space-s);
+  border-radius: var(--border-size-xs);
+}
+
+pre code {
+  width: 100%;
+  padding: var(--space-s) var(--space-m);
+}
+
+.align-x {
+  align-items: center;
+}/*# sourceMappingURL=index.css.map */

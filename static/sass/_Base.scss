@@ -1,0 +1,27 @@
+*,
+*:after,
+*:before {
+	box-sizing: inherit;
+}
+
+html {
+	font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+	font-size: 62.5%;
+	box-sizing: border-box;
+}
+
+body {
+	color: #1A1A33;
+	// 1.6rem = 16px. Easy right?
+	font-size: 1.6rem;
+	line-height: 1.5em;
+}
+
+a {
+	text-decoration: none;
+	color: var(--color-theme-primary);
+
+	&:hover {
+		color: var(--color-theme-secondary);
+	}
+}

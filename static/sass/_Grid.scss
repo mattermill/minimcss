@@ -1,0 +1,52 @@
+.container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.row {
+    
+    // Edit this to change the space between columns
+    --column-gap: var(--space-s);
+
+    display: flex;
+    margin: 1em calc(var(--column-gap) * -1);
+    flex-direction: column;
+
+    .col {
+        flex: 1;
+        margin: 0  var(--column-gap);
+
+        &.hug {
+            flex: none;
+            width: unset;
+        }
+    }
+}
+
+@media (min-width:40rem) {
+    .container {
+        max-width: 1280px;
+        flex-direction: row;
+    }
+    .row {
+        flex-direction: row;
+        
+        .col {
+            margin-bottom: 1em;
+
+            &.col-one-third {
+                flex: none;
+                width: 33.3333%;
+            }
+        }
+        
+        &.gap-l {
+            margin: 1em calc( (var(--column-gap) * 3) * -1);
+
+            > .col {
+                margin: 0 calc(var(--column-gap) * 3);
+            }
+        }
+    }
+}

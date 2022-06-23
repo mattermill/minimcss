@@ -1,0 +1,335 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>minim - lightweight css framework</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:ital,wght@0,900;1,900&family=Press+Start+2P&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="static/sass/minim.docs.css">
+    </head>
+    <body>
+        <div class="md-wrapper">
+            <nav class="md-toc">
+                <ul>
+                    <li class="logo">
+                        <div class="row">
+                            <div class="col">
+                                <a href="#"><img
+                                        src="static/images/logo-alt_2.svg"
+                                        alt="minim logo" height="32"></a>
+                            </div>
+                            <div class="col hug">
+                                <p>Really small CSS.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- <li class="nav-section-title"><strong>Basics</strong></li> -->
+                    <li class="nav_item active"><a href="#grid">01. Grid</a></li>
+                    <li class="nav_item"><a href="#button">02. Button</a></li>
+                    <li class="nav_item"><a href="#spacing">03. Spacing</a></li>
+                    <li class="nav_item"><a href="#typography">04. Typography</a></li>
+                    <li class="nav_item"><a href="#form">05. Form</a></li>
+                    <li class="nav_item"><a href="#table">06. Table</a></li>
+                    <li class="nav_item"><a href="#alert">07. Alert</a></li>
+                </ul>
+            </nav>
+            <main class="md-container">
+                <section class="md-section" id="grid">
+                    <div class="md-section-header">
+                        <h2><span>01</span> Grid</h2>
+                    </div>
+                    <div class="row gap-l md-block">
+                        <div class="col md-content">
+                            <h3>Columns</h3>
+                            <p>Add a <code>.row</code>
+                                and fill it with <code>.col</code>'s.</p>
+                            <p>12 column grids? Psh. Try
+                                a 13 column grid. Now this is podracing!</p>
+                        </div>
+                        <div class="col">
+                            <div class="row">
+                                <div class="col md-col"><code>.col</code></div>
+                                <div class="col md-col"><code>.col</code></div>
+                                <div class="col md-col"><code>.col</code></div>
+                                <div class="col md-col"><code>.col</code></div>
+                                <div class="col md-col"><code>.col</code></div>
+                                <div class="col md-col"><code>.col</code></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row gap-l md-block">
+                        <div class="col md-content">
+                            <h3>Hug Contents</h3>
+                            <p>By adding <code>.hug</code>
+                                to a column, it will hug its contents and occupy
+                                only the space it needs.</p>
+                        </div>
+                        <div class="col">
+                            <div class="row">
+                                <div class="col md-col"><code>.col</code></div>
+                                <div class="col hug md-col"><code>.col.hug</code></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="md-section" id="button">
+                    <div class="md-section-header">
+                        <h2><span>02</span> Button</h2>
+                    </div>
+                    <div class="row gap-l md-block">
+                        <div class="col md-content">
+                                <p>Make buttons with <code>button</code> or
+                                    <code>a.button</code></p>
+                        </div>
+                        <div class="col">
+                            <p>
+                                <button class="button">Default</button>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row gap-l md-block">
+                        <div class="col md-content">
+                                <p>
+                                    Make 'em primary by adding <code>.button-primary</code>
+                                </p>
+                        </div>
+                        <div class="col">
+                            <p>
+                                <button class="button button-primary">Primary</button>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row gap-l md-block">
+                        <div class="col md-content">
+                            <p>
+                                ...and deemphasize with <code>.button-ghost</code>
+                            </p>
+                        </div>
+                        <div class="col">
+                            <p>
+                                <button class="button button-ghost">Spooky!</button>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row gap-l md-block">
+                        <div class="col md-content">
+                            <p>
+                                Make 'em large by adding <code>.button-large</code>
+                            </p>
+                        </div>
+                        <div class="col">
+                            <p>
+                                <button class="button button-large">Large!</button>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row gap-l md-block">
+                        <div class="col md-content">
+                            <p>
+                                ...or make 'em small by adding <code>.button-small</code>
+                            </p>
+                        </div>
+                        <div class="col">
+                            <p>
+                                <button class="button button-small">Small</button>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row gap-l md-block">
+                        <div class="col">
+                            <div class="md-content md-info">
+                                <p>💡 That's it! Add your own styles to customize buttons for your project.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="md-section" id="spacing">
+                    <div class="col">
+                        <div class="md-content md-section-header">
+                            <h2>Spacing</h2>
+                        </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th><strong>Example</strong></th>
+                                    <th><strong>Description</strong></th>
+                                    <th><strong>Code</strong></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <span class="md-spacer md-spacer--xs
+                                            md-bg-primary"></span>
+                                    </td>
+                                    <td class="md-content">
+                                        <h3>Space XS</h3>
+                                        <p>An extra small space.</p>
+                                    </td>
+                                    <td>
+                                        <pre><code>var(--space-xs)</code></pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="md-spacer md-spacer--s
+                                            md-bg-primary"></span>
+                                    </td>
+                                    <td class="md-content">
+                                        <h3>Space S</h3>
+                                        <p>A small space.</p>
+                                    </td>
+                                    <td>
+                                        <pre><code>var(--space-s)</code></pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="md-spacer md-spacer--m
+                                            md-bg-primary"></span>
+                                    </td>
+                                    <td class="md-content">
+                                        <h3>Space M</h3>
+                                        <p>A medium space.</p>
+                                    </td>
+                                    <td>
+                                        <pre><code>var(--space-m)</code></pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="md-spacer md-spacer--l
+                                            md-bg-primary"></span>
+                                    </td>
+                                    <td class="md-content">
+                                        <h3>Space L</h3>
+                                        <p>A large space.</p>
+                                    </td>
+                                    <td>
+                                        <pre><code>var(--space-l)</code></pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="md-spacer md-spacer--xl
+                                            md-bg-primary"></span>
+                                    </td>
+                                    <td class="md-content">
+                                        <h3>Space XL</h3>
+                                        <p>An extra large space.</p>
+                                    </td>
+                                    <td>
+                                        <pre><code>var(--space-xl)</code></pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="md-spacer md-spacer--xxl
+                                            md-bg-primary"></span>
+                                    </td>
+                                    <td class="md-content">
+                                        <h3>Space XXL</h3>
+                                        <p>An extra, extra large space.</p>
+                                    </td>
+                                    <td>
+                                        <pre><code>var(--space-xxl)</code></pre>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <section class="md-section row">
+                    <div class="col">
+                        <div class="md-content md-section-header" id="#list">
+                            <h2>Typography</h2>
+                        </div>
+                        <div class="md-content">
+                            <h3>Headings</h3>
+                        </div>
+
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th><strong>Example</strong></th>
+                                    <th><strong>Description</strong></th>
+                                    <th><strong>Code</strong></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <h1>Example</h1>
+                                    </td>
+                                    <td class="md-content">
+                                        <h3>Heading 1</h3>
+                                        <p>H1 heading</p>
+                                    </td>
+                                    <td>
+                                        <pre><code>var(--font-size-xxxl)</code></pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <H2>Example</H2>
+                                    </td>
+                                    <td class="md-content">
+                                        <h3>Heading 2</h3>
+                                        <p>H2 heading</p>
+                                    </td>
+                                    <td>
+                                        <pre><code>var(--font-size-xxl)</code></pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <H3>Example</H3>
+                                    </td>
+                                    <td class="md-content">
+                                        <h3>Heading 3</h3>
+                                        <p>H3 heading</p>
+                                    </td>
+                                    <td>
+                                        <pre><code>var(--font-size-xl)</code></pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <H4>Example</H4>
+                                    </td>
+                                    <td class="md-content">
+                                        <h3>Heading 4</h3>
+                                        <p>H3 heading</p>
+                                    </td>
+                                    <td>
+                                        <pre><code>var(--font-size-l)</code></pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h5>Example</h5>
+                                    </td>
+                                    <td class="md-content">
+                                        <h3>Heading 5</h3>
+                                        <p>H5 heading</p>
+                                    </td>
+                                    <td>
+                                        <pre><code>var(--font-size-m)</code></pre>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </body>
+</html>
