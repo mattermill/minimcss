@@ -1,57 +1,26 @@
 :root {
-    
-    // Color
+  --color-bg: #111;
+  --color-text: #fff;
+  --color-text-muted: #8e979e;
+  --color-accent: #00e4ff;
 
-    --color-white: #FFFFFF;
-    --color-black: #1A1A33;
+  --color-border: #3a3a3a;
 
-    --color-theme-primary: #1A1A33;
-    --color-theme-secondary: #06e52f;
+  --space-xs: 0.5rem; // 4px
+  --space-s: 1rem; // 8px
+  --space-m: 2rem; // 16px
+  --space-l: 3rem; // 24px
+  --space-xl: 4rem; // 32px
+  --space-2xl: 6rem; // 48px
+  --space-3xl: 8rem; // 64px
 
-    --color-gray: #f5f5f6;
-    --color-gray-dark: #D1D8DB;
-    --color-gray-darker: #A8B3B8;
+  --color-link: var(--color-text);
 
-    --color-bg-light: var(--color-gray);
-    --color-bg-lighter: #f5f5f5;
-    --color-bg-dark: var(--color-gray-dark);
-
-    --color-border: #E1E2E3;
-    --color-border-dark: var(--color-gray-dark);
-
-    --color-text-dark: var(--color-black);
-    --color-text-medium: var(--color-gray-darker);
-    --color-text-light: #B0B6B8;
-    --color-text-on-dark: var(--color-white);
-    --color-text-code: #F616AA;
-    
-    // Spacing
-
-    --space-xs: 0.5rem;
-    --space-s: 0.8rem;
-    --space-m: 1.6rem;
-    --space-l: 3.2rem;
-    --space-xl: 4.8rem;
-    --space-xxl: 6.4rem;
-
-    // Font Size
-
-    --font-size-xxxl: 4.5em;
-    --font-size-xxl: 3em;
-    --font-size-xl: 2em;
-    --font-size-l: 1.5em;
-    --font-size-m: 1em;
-    --font-size-s: 0.875em;
-    --font-size-xs: 0.75em;
-
-    // Breakpoints
-
-    --mobile: 40rem;
-    --tablet: 80rem;
-    --desktop: 120rem;
-
-    // Misc Utility
-    --border-size-s: var(--space-s);
-    --border-size-xs: var(--space-xs);
-
+  --grid-gutter: var(--space-s);
 }
+
+$breakpoint-mobile: 600px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+$breakpoint-large: 1440px;
+$breakpoint-ultra: 1800px;

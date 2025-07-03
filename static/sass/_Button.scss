@@ -1,49 +1,30 @@
-button,
-a.button {
-    display: inline-block;
-    height: 4.2rem;
-    line-height: 4.2rem;
-    padding: 0 var(--space-m);
-    border: 1px solid transparent;
-    border-radius: 4px;
-    font-size: var(--font-size-s);
-    font-weight: 700;
-    transition: all 0.2s;
-    cursor: pointer;
+@use "_Variables" as *;
 
-    &:hover {
-        background: var(--color-bg-dark);
-    }
-    &:active {
-        transform: translateY(1px);
-    }
-
-/* ==========================================================================
-   Variants
-   ========================================================================== */
-
-    &.button-primary {
-        background: var(--color-theme-primary);
-        color: var(--color-white);
-
-        &:hover {
-            background: var(--color-black);
-        }
-    }
-
-/* ==========================================================================
-   Sizes
-   ========================================================================== */
-
-    &.button-large {
-        height: 5.6rem;
-        line-height: 5.6rem;
-        font-size: var(--font-size-m);
-        padding: 0 var(--space-l);
-    }
-    &.button-small {
-        height: 2.8rem;
-        line-height: 2.8rem;
-        padding: 0 var(--space-s);
-    }
+button {
+  font-size: 2rem;
+  padding: var(--space-m) var(--space-m);
+  color: var(--color-text);
+  background-color: var(--color-body);
+  border: 1px solid var(--color-border);
+  cursor: pointer;
+  position: relative;
+  box-shadow: inset 0 0 0 #ffffff;
+  transition: box-shadow 0.4s ease, transform 0.1s ease, color 0.4s ease;
+  &:hover:not(:disabled) {
+    box-shadow: inset 0 -3.5em 0px #ffffff;
+    color: var(--color-body);
+  }
+  &:active:not(:disabled) {
+    transform: scale(0.95);
+  }
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+button.primary {
+  background-color: var(--color-border);
 }

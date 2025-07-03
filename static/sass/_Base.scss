@@ -1,27 +1,60 @@
+// _Base.scss
 *,
 *:after,
 *:before {
-	box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 html {
-	font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-	font-size: 62.5%;
-	box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
+    helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial,
+    sans-serif;
+  font-size: 50%; // 1rem = 8px, the core of minim's Base-8 system
+  box-sizing: border-box;
 }
 
 body {
-	color: #1A1A33;
-	// 1.6rem = 16px. Easy right?
-	font-size: 1.6rem;
-	line-height: 1.5em;
+  background-color: var(--color-bg);
+  color: var(--color-text-muted);
+  font-size: 2rem;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 0;
 }
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-text);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+blockquote {
+  margin-top: 0;
+  margin-bottom: var(--space-m);
+}
+section {
+  padding: var(--space-xl) 0;
+}
+section > *:last-child {
+  margin-bottom: 0;
+}
 a {
-	text-decoration: none;
-	color: var(--color-theme-primary);
+  color: var(--color-text);
 
-	&:hover {
-		color: var(--color-theme-secondary);
-	}
+  &:hover {
+    text-decoration: none;
+  }
+}
+button {
+  border: none;
 }
