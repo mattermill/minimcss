@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ocho</title>
+    <link rel="stylesheet" href="static/sass/index.css" />
+
+    <style>
+      .ocho {
+        height: 100%;
+      }
+      #page {
+        display: grid;
+        grid-template-areas:
+          "header header"
+          "sidebar content";
+        grid-template-columns: auto 1fr;
+        grid-template-rows: auto 1fr;
+        height: 100%;
+      }
+      #header {
+        grid-area: header;
+        border-bottom: 1px solid var(--color-border);
+      }
+      #sidebar {
+        grid-area: sidebar;
+        background: black;
+        width: 20vw;
+        min-width: 320px;
+        border-right: 1px solid var(--color-border);
+      }
+      #content {
+        grid-area: content;
+      }
+    </style>
+  </head>
+  <body class="ocho">
+    <div id="page">
+      <div id="header">ocho</div>
+      <div id="sidebar">
+        <h2>Sidebar</h2>
+      </div>
+      <div id="content">
+        <h2>Content</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+          quos.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

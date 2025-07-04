@@ -25,6 +25,7 @@ html {
   font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
   font-size: 50%;
   box-sizing: border-box;
+  height: 100%;
 }
 
 body {
@@ -86,13 +87,110 @@ button {
 .row {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--grid-gutter);
+  margin: 0 calc(var(--grid-gutter) / -2);
 }
 
 .col {
-  flex: 1;
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding: 0 calc(var(--grid-gutter) / 2);
+  margin: calc(var(--grid-gutter) / 2) 0;
 }
 
+@media (min-width: 600px) {
+  .col {
+    flex: 1;
+    max-width: none;
+  }
+}
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12,
+.col-13,
+.col-14,
+.col-15,
+.col-16 {
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding: 0 calc(var(--grid-gutter) / 2);
+  margin: calc(var(--grid-gutter) / 2) 0;
+}
+
+@media (min-width: 600px) {
+  .col-1 {
+    flex: 0 0 6.25%;
+    max-width: 6.25%;
+  }
+  .col-2 {
+    flex: 0 0 12.5%;
+    max-width: 12.5%;
+  }
+  .col-3 {
+    flex: 0 0 18.75%;
+    max-width: 18.75%;
+  }
+  .col-4 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .col-5 {
+    flex: 0 0 31.25%;
+    max-width: 31.25%;
+  }
+  .col-6 {
+    flex: 0 0 37.5%;
+    max-width: 37.5%;
+  }
+  .col-7 {
+    flex: 0 0 43.75%;
+    max-width: 43.75%;
+  }
+  .col-8 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .col-9 {
+    flex: 0 0 56.25%;
+    max-width: 56.25%;
+  }
+  .col-10 {
+    flex: 0 0 62.5%;
+    max-width: 62.5%;
+  }
+  .col-11 {
+    flex: 0 0 68.75%;
+    max-width: 68.75%;
+  }
+  .col-12 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  .col-13 {
+    flex: 0 0 81.25%;
+    max-width: 81.25%;
+  }
+  .col-14 {
+    flex: 0 0 87.5%;
+    max-width: 87.5%;
+  }
+  .col-15 {
+    flex: 0 0 93.75%;
+    max-width: 93.75%;
+  }
+  .col-16 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
 .grid {
   display: grid;
   grid-template-columns: repeat(16, 1fr);
@@ -366,6 +464,14 @@ button:focus {
 
 button.primary {
   background-color: var(--color-border);
+}
+
+input {
+  font-size: 2rem;
+  padding: var(--space-m) var(--space-m);
+  color: var(--color-text);
+  background-color: var(--color-body);
+  border: 1px solid var(--color-border);
 }
 
 .mt-0 {

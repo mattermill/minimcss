@@ -28,3 +28,11 @@ button {
 button.primary {
   background-color: var(--color-border);
 }
+
+input {
+  font-size: 2rem;
+  padding: var(--space-m) var(--space-m);
+  color: var(--color-text);
+  background-color: var(--color-body);
+  border: 1px solid var(--color-border);
+}
