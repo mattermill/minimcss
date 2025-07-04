@@ -39,8 +39,7 @@ p,
 ul,
 ol,
 blockquote {
-  margin-top: 0;
-  margin-bottom: var(--space-m);
+  margin: var(--space-) 0;
 }
 section {
   padding: var(--space-xl) 0;

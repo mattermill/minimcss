@@ -5,22 +5,11 @@
   margin: 0 auto;
   padding: 0 var(--space-m);
 }
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(16, 1fr);
+.row {
+  display: flex;
+  flex-wrap: wrap;
   gap: var(--grid-gutter);
-  margin-bottom: var(--grid-gutter);
 }
-.full {
-  grid-column: span 16;
-}
-@for $i from 1 through 16 {
-  .span-#{$i} {
-    grid-column: span 16;
-
-    @media (min-width: $breakpoint-mobile) {
-      grid-column: span #{$i};
-    }
-  }
+.col {
+  flex: 1;
 }

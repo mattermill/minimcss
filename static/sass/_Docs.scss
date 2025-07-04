@@ -31,8 +31,10 @@ section:not(:first-child) {
   }
 }
 .card {
+  width: 100%;
+  text-align: center;
   background-color: var(--color-doc-accent);
-  padding: var(--space-s);
+  padding: var(--space-xs);
   color: var(--color-text-muted);
   font-size: 1.5rem;
 
@@ -42,6 +44,9 @@ section:not(:first-child) {
 }
 .logo {
   width: 5rem;
+}
+.title {
+  margin: var(--space-m) 0;
 }
 .hero {
   text-align: center;
