@@ -4,7 +4,7 @@
 > ⚠️ ocho is a work in progress and is used mostly for my own projects. As a result, I don't recommend you use it.
 ---
 
-✅ **Features**
+✅ **Complete**
 - Base-8 spacing scale
 - Mobile-first, fully responsive
 
