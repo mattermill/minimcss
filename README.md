@@ -4,11 +4,12 @@
 > ⚠️ ocho is a work in progress and is used mostly for my own projects. As a result, I don't recommend you use it.
 ---
 
-✅ **Complete**
+## Roadmap
+### ✅ Complete
 - Base-8 spacing scale
 - Mobile-first, fully responsive
 
-🚧 **Roadmap**
+### 🚧 Roadmap
 - Browser-testing
 - Comprehensive theming
 - Forms
