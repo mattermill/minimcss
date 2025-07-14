@@ -8,6 +8,7 @@
     "build:min": "sass static/sass/index.scss static/sass/index.min.css --style=compressed",
     "build:docs": "sass static/sass/minim.docs.scss static/sass/minim.docs.css --source-map",
     "build:all": "npm run build && npm run build:min && npm run build:docs",
+    "vercel-build": "npm run build:all",
     "watch": "sass --watch static/sass/index.scss:static/sass/index.css --source-map",
     "watch:docs": "sass --watch static/sass/minim.docs.scss:static/sass/minim.docs.css --source-map",
     "dev": "sass --watch static/sass/:static/sass/ --source-map"
