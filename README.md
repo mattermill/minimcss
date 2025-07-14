@@ -1,8 +1,7 @@
 # ocho  
-*A lightweight, base-8 CSS framework that’s absolutely not ready for prime time.*
+*A lightweight, base-8 CSS for clean, tight layouts.*
 
-> ⚠️ ocho is a work in progress.  It could (and probably will) break without warning.  
-
+> ⚠️ ocho is a work in progress and is used mostly for my own projects. As a result, I don't recommend you use it.
 ---
 
 | Feature | Status |
