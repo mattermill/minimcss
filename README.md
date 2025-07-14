@@ -9,6 +9,5 @@
 | Base-8 spacing scale | ✅ |
 | Mobile-first, fully responsive | ✅ |
 | 16-column Flexbox & CSS Grid layout | ✅ |
-| Thought-out naming and docs | 🚧 |
-| Browser-tested edge cases | 🚧 |
-| Design tokens / theming | 🚧 |
+| Browser-testing | 🚧 |
+| Comprehensive theming | 🚧 |
