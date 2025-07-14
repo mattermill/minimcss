@@ -4,10 +4,11 @@
 > ⚠️ ocho is a work in progress and is used mostly for my own projects. As a result, I don't recommend you use it.
 ---
 
-| Feature | Status |
-| ------- | ------ |
-| Base-8 spacing scale | ✅ |
-| Mobile-first, fully responsive | ✅ |
-| 16-column Flexbox & CSS Grid layout | ✅ |
-| Browser-testing | 🚧 |
-| Comprehensive theming | 🚧 |
+✅ **Features**
+- Base-8 spacing scale
+- Mobile-first, fully responsive
+
+🚧 **Roadmap**
+- Browser-testing
+- Comprehensive theming
+- Forms
