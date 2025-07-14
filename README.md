@@ -5,11 +5,8 @@
 ---
 
 ## Roadmap
-### ✅ Complete
-- Base-8 spacing scale
-- Mobile-first, fully responsive
-
-### 🚧 Roadmap
-- Browser-testing
-- Comprehensive theming
-- Forms
+- Base-8 spacing scale ✅
+- Mobile-first, fully responsive ✅
+- Browser-testing ✅
+- Comprehensive theming 🚧
+- Forms 🚧
