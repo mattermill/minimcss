@@ -1,16 +1,14 @@
 {
-  "name": "minim-css",
+  "name": "ocho-css",
   "version": "1.0.0",
   "description": "A lightweight CSS framework",
   "main": "static/sass/index.css",
   "scripts": {
     "build": "sass static/sass/index.scss static/sass/index.css --source-map",
     "build:min": "sass static/sass/index.scss static/sass/index.min.css --style=compressed",
-    "build:docs": "sass static/sass/minim.docs.scss static/sass/minim.docs.css --source-map",
-    "build:all": "npm run build && npm run build:min && npm run build:docs",
+    "build:all": "npm run build && npm run build:min",
     "vercel-build": "npm run build:all",
     "watch": "sass --watch static/sass/index.scss:static/sass/index.css --source-map",
-    "watch:docs": "sass --watch static/sass/minim.docs.scss:static/sass/minim.docs.css --source-map",
     "dev": "sass --watch static/sass/:static/sass/ --source-map"
   },
   "devDependencies": {
